@@ -1,0 +1,11 @@
+elemen,keterangan
+Source,HMDA Data Browser — https://ffiec.cfpb.gov/data-browser/ (dokumentasi kolom: https://ffiec.cfpb.gov/documentation/publications/loan-level-datasets/lar-data-fields)
+Owner/Provider,"Federal Financial Institutions Examination Council (FFIEC) dan Consumer Financial Protection Bureau (CFPB), Amerika Serikat"
+Dataset Description,Loan/Application Register (LAR) publik: satu baris = satu aplikasi/kredit KPR yang dilaporkan lender sesuai Home Mortgage Disclosure Act
+Period,2024 (dataset One Year) sebagai data latih/uji; 2025 (dataset Snapshot) sebagai data out-of-time
+Number of Records,Unduhan: 93.655 (2024) dan 93.893 (2025); setelah filter scope: 55.002 dan 53.241
+Number of Variables,99 kolom pada file unduhan; 76 kolom dibaca; 13 fitur kandidat model
+Target Variable,y = 1 bila action_taken = 3 (ditolak); y = 0 bila action_taken = 1 atau 2 (disetujui)
+Key Predictors,"loan_amount, income, property_value, ltv_calc, dti_mid, loan_term, tract_to_msa_income_percentage, ffiec_msa_md_median_family_income, loan_to_income, property_to_income, submission_of_application, conforming_loan_limit, has_coapplicant"
+Unit of Analysis,Satu baris = satu aplikasi KPR
+Limitations,"Tanpa credit score/riwayat pembayaran; konteks AS (Colorado); nilai disamarkan untuk privasi (pembulatan, rentang DTI/usia); target = keputusan lender bukan default; cross-sectional per tahun; data 2025 berupa Snapshot yang dapat direvisi"

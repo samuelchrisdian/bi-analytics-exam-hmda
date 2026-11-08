@@ -1,0 +1,4 @@
+| aturan                   | kondisi                                               | efek                |
+|:-------------------------|:------------------------------------------------------|:--------------------|
+| data_tidak_lengkap       | income, ltv_calc, dti_mid, atau property_value kosong | Tier minimal Sedang |
+| melewati_batas_kebijakan | dti_mid > 50 atau ltv_calc > 97                       | Tier menjadi Tinggi |

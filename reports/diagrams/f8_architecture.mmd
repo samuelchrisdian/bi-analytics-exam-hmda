@@ -1,0 +1,30 @@
+flowchart TB
+    subgraph LOS["Loan Origination System (LOS) Bank X"]
+        U1["Loan officer / pemohon<br/>input aplikasi"]
+        U2["Dashboard underwriter<br/>(skor, tier, reason codes)"]
+    end
+    subgraph SVC["Layanan scoring"]
+        API["REST API scoring<br/>POST /score (real-time)"]
+        BATCH["Batch scoring harian<br/>(laporan pipeline)"]
+        RULES["Modul aturan bisnis"]
+    end
+    subgraph MLOPS["MLOps"]
+        REG[("Model registry<br/>versi model + threshold")]
+        LOG[("Log prediksi &<br/>keputusan underwriter")]
+        MON["Monitoring<br/>PSI, performa, fairness"]
+        TRAIN["Pipeline retraining<br/>champion–challenger"]
+    end
+    subgraph GOV["Tata kelola"]
+        RISK["Model risk & compliance<br/>(approval model)"]
+    end
+    U1 --> API
+    API --> RULES --> U2
+    REG --> API
+    REG --> BATCH
+    BATCH --> U2
+    API --> LOG
+    U2 -- "keputusan & override" --> LOG
+    LOG --> MON
+    MON -- "alert drift / penurunan performa" --> TRAIN
+    TRAIN -- "model kandidat" --> RISK
+    RISK -- "disetujui" --> REG

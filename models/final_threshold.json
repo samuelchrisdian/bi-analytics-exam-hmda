@@ -1,0 +1,9 @@
+{
+  "model": "xgb",
+  "threshold": 0.17,
+  "c_fn": 5,
+  "c_fp": 1,
+  "calibrated": true,
+  "calibration_method": "isotonic",
+  "t_low": 0.04
+}

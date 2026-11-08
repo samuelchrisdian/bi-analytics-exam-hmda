@@ -1,0 +1,11 @@
+flowchart LR
+    A["Monitoring bulanan<br/>PSI fitur & skor, distribusi tier,<br/>ROC-AUC, PR-AUC, recall,<br/>override rate, fairness (kuartalan)"] --> B{"Ambang<br/>terlampaui?"}
+    B -- "Tidak" --> A
+    B -- "Ya" --> C["Analisis akar masalah<br/>data drift / model drift /<br/>perubahan kebijakan / ekonomi"]
+    C --> D["Feedback:<br/>keputusan aktual, override underwriter,<br/>kasus FN/FP, data baru"]
+    D --> E["Retraining model challenger<br/>(pipeline & seed sama)"]
+    E --> F{"Validasi:<br/>challenger lebih baik<br/>& lolos fairness?"}
+    F -- "Tidak" --> A
+    F -- "Ya" --> G["Approval model risk<br/>& shadow mode"]
+    G --> H["Deployment versi baru<br/>(model registry)"]
+    H --> A

@@ -1,0 +1,27 @@
+flowchart LR
+    subgraph P["Permasalahan"]
+        P1["Review manual semua<br/>aplikasi KPR lambat"]
+        P2["Keputusan tidak konsisten"]
+        P3["Biaya salah keputusan<br/>FN lebih mahal dari FP"]
+    end
+    subgraph D["Data & variabel"]
+        D1["Karakteristik pinjaman<br/>jumlah, tenor, conforming"]
+        D2["Kapasitas bayar<br/>pendapatan, DTI, rasio pinjaman"]
+        D3["Agunan<br/>nilai properti, LTV"]
+        D4["Konteks wilayah<br/>pendapatan tract & MSA"]
+    end
+    subgraph M["Metode (CRISP-DM 10 tahap)"]
+        M1["LR, Random Forest,<br/>XGBoost vs Dummy"]
+        M2["Threshold berbasis biaya<br/>C_FN = 5, C_FP = 1"]
+        M3["Validasi: OOT, SHAP,<br/>fairness, bootstrap"]
+    end
+    subgraph O["Output"]
+        O1["Probabilitas penolakan<br/>+ reason codes"]
+        O2["Risk tier &<br/>alur deployment"]
+        O3["Monitoring drift &<br/>rekomendasi bisnis"]
+    end
+    Y(["Target: keputusan lender<br/>ditolak (1) vs disetujui (0)"])
+    P --> M
+    D --> M
+    Y --> M
+    M --> O

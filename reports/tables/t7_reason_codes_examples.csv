@@ -1,0 +1,4 @@
+contoh,probabilitas,aktual,reason_codes
+disetujui,0.0,disetujui,Rasio pinjaman terhadap pendapatan; Pengajuan langsung ke lender = 2
+borderline,0.14864864945411682,disetujui,Rasio pinjaman terhadap nilai properti (%); Nilai properti (USD); Jumlah pinjaman (USD)
+ditolak,1.0,ditolak,Rasio utang terhadap pendapatan (%); Tenor pinjaman (bulan); Nilai properti (USD)

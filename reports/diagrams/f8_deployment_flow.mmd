@@ -1,0 +1,17 @@
+flowchart LR
+    A(["Aplikasi KPR masuk<br/>(Loan Origination System)"]) --> B{"Validasi data<br/>lengkap & wajar?"}
+    B -- "Tidak" --> B2["Minta kelengkapan<br/>dokumen ke pemohon"]
+    B2 --> A
+    B -- "Ya" --> C["Model final<br/>(pipeline preprocessing + klasifier)"]
+    C --> D["Probabilitas penolakan<br/>+ 3 reason codes (SHAP)"]
+    D --> E["Risk tier<br/>Rendah / Sedang / Tinggi"]
+    E --> F["Aturan bisnis (override)<br/>data tidak lengkap → min. Sedang<br/>DTI > 50% / LTV > 97% → Tinggi"]
+    F --> G1["Tier Rendah:<br/>fast-track, verifikasi ringan"]
+    F --> G2["Tier Sedang:<br/>review standar"]
+    F --> G3["Tier Tinggi:<br/>review senior underwriter"]
+    G1 --> H{"Keputusan akhir<br/>oleh underwriter"}
+    G2 --> H
+    G3 --> H
+    H --> I["Aksi: setujui / tolak<br/>+ alasan tertulis ke pemohon"]
+    I --> J[("Log prediksi, keputusan,<br/>override & alasan")]
+    J --> K["Feedback ke monitoring<br/>dan retraining"]

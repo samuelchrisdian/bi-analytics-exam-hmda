@@ -1,0 +1,11 @@
+objek,pembanding,psi,status
+Skor probabilitas model,train vs test 2024 (kontrol),0.0011196997031081525,Stabil
+Skor probabilitas model,train 2024 vs OOT 2025,0.004183730626688406,Stabil
+Distribusi risk tier,train vs test 2024 (kontrol),3.8872026256042455e-05,Stabil
+Distribusi risk tier,train 2024 vs OOT 2025,0.0022029832020785257,Stabil
+Porsi tier Rendah (%),train,70.10749755687371,-
+Porsi tier Sedang (%),train,17.156428262994023,-
+Porsi tier Tinggi (%),train,12.73607418013227,-
+Porsi tier Rendah (%),oot,71.32097443699405,-
+Porsi tier Sedang (%),oot,17.465862774929096,-
+Porsi tier Tinggi (%),oot,11.213162788076858,-

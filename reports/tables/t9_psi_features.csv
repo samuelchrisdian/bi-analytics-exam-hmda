@@ -1,0 +1,14 @@
+fitur,psi,status,psi_kontrol_train_vs_test,label
+ffiec_msa_md_median_family_income,2.6864090628552484,Tindakan,0.0002965002977130711,Median pendapatan keluarga MSA (USD)
+loan_amount,0.015953423837386065,Stabil,0.0016582549662856217,Jumlah pinjaman (USD)
+dti_mid,0.005218868300210625,Stabil,0.00055525341379151,Rasio utang terhadap pendapatan (%)
+property_value,0.004153699220748585,Stabil,0.0006603658136184302,Nilai properti (USD)
+ltv_calc,0.003941739737260582,Stabil,0.001962591734220953,Rasio pinjaman terhadap nilai properti (%)
+tract_to_msa_income_percentage,0.0038555982227628078,Stabil,0.0006459669383556025,Pendapatan tract terhadap MSA (%)
+income,0.0025964099026249683,Stabil,0.0009406316683210223,Pendapatan (ribu USD)
+loan_term,0.0018269192277691787,Stabil,1.2675693630416547e-05,Tenor pinjaman (bulan)
+property_to_income,0.0015521323558990458,Stabil,0.0006975784723381349,Rasio nilai properti terhadap pendapatan
+loan_to_income,0.0006770626668193376,Stabil,0.0014318179800255218,Rasio pinjaman terhadap pendapatan
+conforming_loan_limit,0.00024288160594065824,Stabil,0.00013072026716436208,Batas conforming loan
+submission_of_application,0.00017445330500395778,Stabil,1.2110871665538984e-05,Pengajuan langsung ke lender
+has_coapplicant,0.00012020734653509243,Stabil,0.00027835859579558315,Ada co-applicant

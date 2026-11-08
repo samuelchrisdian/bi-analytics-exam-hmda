@@ -1,0 +1,16 @@
+model,hyperparameter,ruang_pencarian,alasan
+dummy,strategy,stratified (tetap),Baseline acak sesuai proporsi kelas
+logreg,C,"log-uniform 0,001–100",Kekuatan regularisasi L2 (C kecil = regularisasi kuat); meredam multikolinearitas fitur ukuran
+rf,n_estimators,integer 200–500,Jumlah pohon; lebih banyak = lebih stabil tetapi lebih lambat
+rf,max_depth,"6, 10, 14, 20, None",Kedalaman pohon; mengendalikan kompleksitas dan overfitting
+rf,min_samples_leaf,integer 1–50,Minimal sampel per daun; regularisasi pohon pada kelas minoritas
+rf,max_features,"sqrt, 0,3, 0,5",Proporsi fitur per split; menambah keragaman pohon
+xgb,n_estimators,integer 200–800,Jumlah pohon; lebih banyak = lebih stabil tetapi lebih lambat
+xgb,max_depth,integer 3–8,Kedalaman pohon; mengendalikan kompleksitas dan overfitting
+xgb,learning_rate,"log-uniform 0,01–0,2",Langkah boosting; kecil = lebih general tetapi butuh lebih banyak pohon
+xgb,subsample,"uniform 0,6–1,0",Proporsi baris per pohon; mengurangi overfitting
+xgb,colsample_bytree,"uniform 0,6–1,0",Proporsi fitur per pohon; mengurangi overfitting
+xgb,min_child_weight,integer 1–10,Minimal bobot per daun; regularisasi
+logreg,(tetap),"class_weight=balanced, max_iter=2000, penalty L2",Penanganan imbalance / konfigurasi dasar
+rf,(tetap),class_weight=balanced_subsample,Penanganan imbalance / konfigurasi dasar
+xgb,(tetap),"scale_pos_weight=7,509 (rasio negatif/positif), tree_method=hist, eval_metric=aucpr",Penanganan imbalance / konfigurasi dasar

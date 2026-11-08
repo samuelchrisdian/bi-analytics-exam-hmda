@@ -1,0 +1,14 @@
+fitur,pct_missing_train,pct_missing_test
+property_to_income,3.0612940614986024,2.990637214798655
+ltv_calc,1.829503874911934,1.781656213071539
+property_value,1.829503874911934,1.781656213071539
+loan_to_income,1.352241994500125,1.3544223252431598
+income,1.352241994500125,1.3544223252431598
+dti_mid,1.01588600259085,0.9999090991728025
+loan_term,0.07499829549328424,0.08181074447777476
+loan_amount,0.0,0.0
+tract_to_msa_income_percentage,0.0,0.0
+ffiec_msa_md_median_family_income,0.0,0.0
+submission_of_application,0.0,0.0
+conforming_loan_limit,0.0,0.0
+has_coapplicant,0.0,0.0

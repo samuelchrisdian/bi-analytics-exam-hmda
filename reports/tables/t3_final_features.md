@@ -1,0 +1,15 @@
+| fitur                             | label                                      | jenis       | log_transform   |
+|:----------------------------------|:-------------------------------------------|:------------|:----------------|
+| loan_amount                       | Jumlah pinjaman (USD)                      | numerik     | True            |
+| income                            | Pendapatan (ribu USD)                      | numerik     | True            |
+| property_value                    | Nilai properti (USD)                       | numerik     | True            |
+| ltv_calc                          | Rasio pinjaman terhadap nilai properti (%) | numerik     | False           |
+| dti_mid                           | Rasio utang terhadap pendapatan (%)        | numerik     | False           |
+| loan_term                         | Tenor pinjaman (bulan)                     | numerik     | False           |
+| tract_to_msa_income_percentage    | Pendapatan tract terhadap MSA (%)          | numerik     | False           |
+| ffiec_msa_md_median_family_income | Median pendapatan keluarga MSA (USD)       | numerik     | False           |
+| loan_to_income                    | Rasio pinjaman terhadap pendapatan         | numerik     | False           |
+| property_to_income                | Rasio nilai properti terhadap pendapatan   | numerik     | False           |
+| submission_of_application         | Pengajuan langsung ke lender               | kategorikal | False           |
+| conforming_loan_limit             | Batas conforming loan                      | kategorikal | False           |
+| has_coapplicant                   | Ada co-applicant                           | kategorikal | False           |

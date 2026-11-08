@@ -1,0 +1,9 @@
+kriteria,Logistic Regression,Random Forest,XGBoost,keterangan
+1. Biaya OOF terendah pada threshold optimal,242.19904093088795,181.20042726301676,180.9277061884957,"Selisih Random Forest vs XGBoost 0,15% (< 1%) → dianggap setara"
+2. PR-AUC CV (mean),0.6588914376144042,0.7924545590785065,0.7962770070573909,Pemecah seri: kemampuan memeringkat kelas minoritas (ditolak)
+"2b. Recall CV (threshold 0,5)",0.751301731468244,0.7462747736383258,0.7661934796624899,"FN lebih mahal, recall tinggi diutamakan"
+3. Stabilitas: std PR-AUC CV,0.0079653877632057,0.0045004528151638,0.005163833938224,"Semua stabil (std < 0,01)"
+Sensitivitas: biaya OOF rasio C_FN = 2,124.54262403127201,90.08886161678144,88.56616895070566,Terendah: XGBoost
+Sensitivitas: biaya OOF rasio C_FN = 5,242.19904093088795,181.20042726301676,180.9277061884957,Terendah: XGBoost
+Sensitivitas: biaya OOF rasio C_FN = 10,400.1499965909866,316.31099293197883,314.9473875593736,Terendah: XGBoost
+4. Interpretability,,,,"LR paling transparan, tetapi biayanya 33,9% lebih tinggi (> 2%) → tidak dipilih; RF/XGBoost dijelaskan dengan SHAP"

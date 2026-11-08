@@ -1,0 +1,5 @@
+kelompok,n,Rasio utang terhadap pendapatan (%),Nilai properti (USD),Tenor pinjaman (bulan),Rasio pinjaman terhadap nilai properti (%),Jumlah pinjaman (USD)
+"FN (ditolak, lolos)",311,42.0,535000.0,360.0,80.12147378434744,415000.0
+"FP (disetujui, ditandai)",437,46.0,195000.0,360.0,91.30434782608695,175000.0
+"TN (disetujui, aman)",9271,40.0,595000.0,360.0,80.11049723756905,465000.0
+"TP (ditolak, terdeteksi)",982,55.0,145000.0,300.0,96.07843137254902,145000.0

@@ -1,0 +1,5 @@
+model,kode,threshold_optimal,biaya_oof_threshold_optimal,biaya_oof_threshold_0_5
+Dummy (baseline),dummy,0.01,623.0312947433013,623.0312947433013
+Logistic Regression,logreg,0.58,242.19904093088795,254.7214836026454
+Random Forest,rf,0.46,181.20042726301676,182.7458466853026
+XGBoost,xgb,0.55,180.9277061884957,181.99586373036976

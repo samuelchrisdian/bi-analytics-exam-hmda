@@ -1,0 +1,19 @@
+tahun,langkah,filter,n_baris,n_dibuang,persen_tersisa
+2024,Data mentah,"unduhan Data Browser (sudah: action_taken 1–3, loan_purpose 1)",93655,0,100.0
+2024,action_taken,"action_taken ∈ {1, 2, 3}",93655,0,100.0
+2024,loan_purpose,loan_purpose ∈ {1},93655,0,100.0
+2024,lien_status,lien_status ∈ {1},88661,4994,94.66766323207517
+2024,loan_type,loan_type ∈ {1},64609,24052,68.98617265495702
+2024,occupancy_type,occupancy_type ∈ {1},55993,8616,59.78645026960654
+2024,reverse_mortgage,reverse_mortgage ∈ {2},55692,301,59.46505792536437
+2024,open-end_line_of_credit,open-end_line_of_credit ∈ {2},55070,622,58.80091826384069
+2024,business_or_commercial_purpose,business_or_commercial_purpose ∈ {2},55002,68,58.72831135550691
+2025,Data mentah,"unduhan Data Browser (sudah: action_taken 1–3, loan_purpose 1)",93893,0,100.0
+2025,action_taken,"action_taken ∈ {1, 2, 3}",93893,0,100.0
+2025,loan_purpose,loan_purpose ∈ {1},93893,0,100.0
+2025,lien_status,lien_status ∈ {1},88204,5689,93.94097536557571
+2025,loan_type,loan_type ∈ {1},63277,24927,67.39267038011353
+2025,occupancy_type,occupancy_type ∈ {1},54428,8849,57.96811263885486
+2025,reverse_mortgage,reverse_mortgage ∈ {2},54101,327,57.61984386482485
+2025,open-end_line_of_credit,open-end_line_of_credit ∈ {2},53334,767,56.802956556931825
+2025,business_or_commercial_purpose,business_or_commercial_purpose ∈ {2},53241,93,56.70390763954715

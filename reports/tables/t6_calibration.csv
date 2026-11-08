@@ -1,0 +1,2 @@
+model,ece_oof_sebelum,dikalibrasi,metode,ece_oof_sesudah,threshold_final,biaya_oof_final
+XGBoost,0.14342126049628723,True,isotonic,0.002642256807014272,0.17,180.85952591986546

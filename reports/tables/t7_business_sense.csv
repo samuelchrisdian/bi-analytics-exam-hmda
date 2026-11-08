@@ -1,0 +1,14 @@
+fitur,porsi_shap,arah_pengaruh,korelasi_spearman_nilai_vs_shap,ekspektasi,logika_underwriting,sesuai
+Rasio utang terhadap pendapatan (%),0.3525758683681488,+,0.6279923405426405,+,DTI tinggi = kapasitas bayar rendah → risiko naik,ya
+Nilai properti (USD),0.13322466611862183,-,-0.8559541790009377,?,Efek bergantung pinjaman/pendapatan,-
+Tenor pinjaman (bulan),0.10019294172525406,-,-0.4470145251019371,?,Tenor standar 30 tahun dominan; tenor tidak standar bisa berisiko,-
+Rasio pinjaman terhadap nilai properti (%),0.0817645788192749,+,0.8828298765315657,+,"LTV tinggi = uang muka kecil, agunan tipis → risiko naik",ya
+Jumlah pinjaman (USD),0.053197167813777924,-,-0.3401389672266663,?,Efek bergantung pendapatan/agunan; tidak ada ekspektasi tunggal,-
+Pendapatan tract terhadap MSA (%),0.04897347837686539,-,-0.6173638670561451,-,Wilayah berpendapatan lebih tinggi → risiko agunan/ekonomi lebih rendah,ya
+Rasio nilai properti terhadap pendapatan,0.047236885875463486,-,-0.8409658682406947,+,Properti mahal relatif pendapatan → beban naik,tidak
+Rasio pinjaman terhadap pendapatan,0.02985338307917118,+,0.10584886529436915,+,Pinjaman besar relatif pendapatan → risiko naik,ya
+Pendapatan (ribu USD),0.029708310961723328,-,-0.22246072900230207,-,Pendapatan tinggi → kapasitas bayar naik → risiko turun,ya
+Median pendapatan keluarga MSA (USD),0.02081507258117199,-,-0.22853665494122533,?,Konteks pasar wilayah; tidak ada ekspektasi tunggal,-
+Ada co-applicant,0.028280646074563265,"Ada co-applicant = 0: 0,055; Ada co-applicant = 1: -0,016",,-,Ada co-applicant menambah pendapatan rumah tangga → risiko turun,lihat arah per kategori
+Batas conforming loan,0.0013025121006648988,"Batas conforming loan = C: -0,001; Batas conforming loan = NC: -0,000",,?,Kredit non-conforming (jumbo) punya syarat lebih ketat,lihat arah per kategori
+Pengajuan langsung ke lender,0.07287451904267073,"Pengajuan langsung ke lender = 1: -0,126; Pengajuan langsung ke lender = 2: 0,059",,?,Jalur pengajuan (langsung/broker) dapat memengaruhi kelengkapan berkas,lihat arah per kategori

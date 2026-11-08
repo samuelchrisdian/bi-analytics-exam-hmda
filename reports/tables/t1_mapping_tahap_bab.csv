@@ -1,0 +1,11 @@
+tahap,nama_tahap,bab,subbab
+Tahap 1,Problem Identification,BAB I,1.1–1.5
+Tahap 2,Sourcing of Raw Data,BAB III,3.3
+Tahap 3,Data Preprocessing & Preparation,BAB III; BAB IV,3.4; 4.1
+Tahap 4,AI/ML Algorithm Identification,BAB II; BAB III,2.3; 3.5
+Tahap 5,Training & Testing the Model,BAB III; BAB IV,3.6; 4.2
+Tahap 6,Choosing the Appropriate Model,BAB III; BAB IV,3.7; 4.3
+Tahap 7,Validation,BAB III; BAB IV,3.7; 4.4
+Tahap 8,Model Deployment,BAB IV,4.5
+Tahap 9,"Monitoring, Feedback & Continuous Improvement",BAB IV,4.6
+Tahap 10,Business Recommendations,BAB IV; BAB V,4.7; 5.1–5.2

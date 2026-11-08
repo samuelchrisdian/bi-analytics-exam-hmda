@@ -1,0 +1,5 @@
+| tier   | rentang_probabilitas   | aksi                                                           |
+|:-------|:-----------------------|:---------------------------------------------------------------|
+| Rendah | < 0,04                 | Fast-track: verifikasi dokumen ringan oleh underwriter         |
+| Sedang | 0,04 – < 0,17          | Review standar oleh underwriter                                |
+| Tinggi | ≥ 0,17                 | Review mendalam oleh senior underwriter; tidak ada auto-reject |

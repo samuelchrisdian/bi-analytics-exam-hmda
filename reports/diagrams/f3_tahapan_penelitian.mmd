@@ -1,0 +1,25 @@
+flowchart TB
+    S(["Mulai"])
+    T1["Tahap 1: Identifikasi masalah<br/>triage KPR, stakeholder, target"]
+    D0[/"Data HMDA Colorado<br/>2024 & 2025 (CSV)"/]
+    T2["Tahap 2: Sourcing data<br/>filter scope, profiling, dokumentasi"]
+    DB[("Data interim & processed<br/>train / test / OOT")]
+    T3["Tahap 3: Preprocessing & EDA<br/>audit leakage, cleaning, fitur, split"]
+    Q1{"Ada kolom<br/>leakage / protected?"}
+    X1["Buang / ganti kolom<br/>(catat di t3_decisions)"]
+    T4["Tahap 4: Identifikasi algoritma<br/>LR, RF, XGBoost + baseline"]
+    T5["Tahap 5: Training & CV<br/>pipeline, tuning, imbalance, OOF"]
+    T6["Tahap 6: Pemilihan model<br/>threshold berbasis biaya, kalibrasi"]
+    Q2{"Model final<br/>disetujui (freeze)?"}
+    T7["Tahap 7: Validasi<br/>test, OOT, bootstrap, SHAP, fairness"]
+    T8["Tahap 8: Desain deployment<br/>risk tier, aturan bisnis, integrasi"]
+    T9["Tahap 9: Monitoring<br/>PSI, KPI, retraining"]
+    T10["Tahap 10: Rekomendasi bisnis"]
+    DOC@{ shape: doc, label: "Laporan tesis<br/>& video presentasi" }
+    E(["Selesai"])
+
+    S --> T1 --> D0 --> T2 --> DB --> T3 --> Q1
+    Q1 -- "Ya" --> X1 --> T3
+    Q1 -- "Tidak" --> T4 --> T5 --> T6 --> Q2
+    Q2 -- "Tidak" --> T5
+    Q2 -- "Ya" --> T7 --> T8 --> T9 --> T10 --> DOC --> E

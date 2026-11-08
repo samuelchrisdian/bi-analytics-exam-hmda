@@ -1,0 +1,9 @@
+skenario,data,cost_per_1000,selisih_vs_review_manual_pct
+Semua aplikasi review manual (tanpa model),Test 2024,882.465230433597,0.0
+Semua aplikasi fast-track (tanpa model),Test 2024,587.6738478320153,-33.40543881334981
+Dummy classifier (baseline acak),Test 2024,623.6705754022362,-29.326328800988875
+Model final,Test 2024,181.07444777747477,-79.48084054388134
+Semua aplikasi review manual (tanpa model),OOT 2025,903.2700362502583,0.0
+Semua aplikasi fast-track (tanpa model),OOT 2025,483.6498187487087,-46.45567777754673
+Dummy classifier (baseline acak),OOT 2025,531.0193272102327,-41.21145328647772
+Model final,OOT 2025,179.14764936796828,-80.16676717057246
