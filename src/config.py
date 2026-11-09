@@ -12,6 +12,10 @@ TABLES = ROOT / "reports" / "tables"
 DIAGRAMS = ROOT / "reports" / "diagrams"
 LAPORAN = ROOT / "laporan"
 
+# data/ tidak ikut repositori; salinan baru harus bisa langsung menjalankan pipeline.
+for _dir in (DATA_RAW, DATA_INTERIM, DATA_PROCESSED, MODELS, FIGURES, TABLES):
+    _dir.mkdir(parents=True, exist_ok=True)
+
 RANDOM_STATE = 42
 STATE = "CO"
 YEAR_TRAIN = 2024
